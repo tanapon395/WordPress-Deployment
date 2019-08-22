@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; ReadMe</title>
+	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
+</head>
+<body>
+<h1 id="logo">
+	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
+</h1>
+<p style="text-align: center">Semantic Personal Publishing Platform</p>
+
+<h2>ก่อนจะเริ่มต้น</h2>
+<p>ขอกล่าวยินดีต้อนรับ WordPress เป็นโปรเจคที่พิเศษมากสำหรับผม นักพัฒนาและผู้สนับสนุนทุกคนต่างได้สรรค์สร้างรวบรวมความเป็นเลิศเข้าไว้ด้วยกัน พวกเราได้ร่วมกันสร้างบางสิ่งที่สวยงาม ผมภูมิใจที่ได้เป็นส่วนหนึ่ง เวลากว่าหลายพันชั่วโมงที่ทุ่มเทให้กับ WordPress เรามุ่งมั่นที่จะทำให้มันดีขึ้นในทุกๆวัน ขอบคุณที่เลือกให้ WordPress เป็นส่วนหนึ่งของชีวิตคุณ</p>
+<p style="text-align: right">&#8212; Matt Mullenweg</p>
+
+<h2>ขั้นตอนติดตั้ง: การติดตั้งเพียง 5 นาที ที่มีชื่อเสียง</h2>
+<ol>
+	<li>แตกซิปไฟล์ (Unzip) ไว้ที่ไดเรกทอรีว่าง และอัปโหลดไฟล์ทั้งหมดไปวางยังที่ที่ต้องการติดตั้ง</li>
+	<li>เปิด <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> ด้วยเบราว์เซอร์ เพื่อเข้าสู่ขั้นตอนการตั้งค่าการเชื่อมต่อฐานข้อมูลในไฟล์ <code>wp-config.php</code>
+		<ol>
+			<li>การทำงานนี้ไม่สามารถใช้ได้กับทุกเว็บโฮส ดังนั้นไม่ต้องกังวล หากคุณทำไม่ได้ ให้เปิด <code>wp-config-sample.php</code> ด้วยโปรแกรมที่ใช้สำหรับสร้างและแก้ไขข้อความ (Text editor) แทน เช่น WordPad หรือโปรแกรมอื่นที่คล้ายกัน และใส่ค่าการเชื่อมต่อฐานข้อมูลของคุณ</li>
+			<li>บันทึกไฟล์เป็นชื่อ <code>wp-config.php</code> และอัปโหลด</li>
+			<li>เปิด <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> ด้วยเบราว์เซอร์</li>
+		</ol>
+	</li>
+	<li>เมื่อตั้งค่าการเชื่อมต่อฐานข้อมูลในไฟล์เสร็จเรียบร้อย ตัวติดตั้งจะสร้างตารางฐานข้อมูลสำหรับบล็อกของคุณ ถ้ามีความผิดพลาดเกิดขึ้น ให้ตรวจสอบไฟล์ <code>wp-config.php</code> และลองติดตั้งใหม่อีกครั้ง หากยังคงติดตั้งไม่สำเร็จ แนะนำให้ไปยัง <a href="https://wordpress.org/support/" title="WordPress support">Support Forums</a> พร้อมด้วยข้อมูลทั้งหมดที่คุณมี</li>
+	<li><strong>ถ้าคุณไม่ได้กำหนดรหัสผ่านเอง ให้ใช้รหัสผ่านที่ได้รับจากระบบ</strong> และถ้าคุณไม่ได้กำหนดชื่อผู้ใช้อีกด้วย ชื่อผู้ใช้ที่ได้รับจะเป็น <code>admin</code></li>
+	<li>ตัวติดตั้งจะนำคุณไปที่ <a href="wp-login.php">หน้าเข้าสู่ระบบ</a> คุณสามารถเข้าสู่ระบบด้วยชื่อผู้ใช้และรหัสผ่านที่กำหนดไว้ระหว่างการติดตั้ง ถ้ารหัสผ่านถูกสร้างขึ้นจากระบบ คุณสามารถเปลี่ยนแปลงได้ที่ &#8220;หน้าข้อมูลส่วนตัว&#8221;</li>
+</ol>
+
+<h2>การอัปเดต</h2>
+<h3>การอัปเดตอัตโนมัติ</h3>
+<p>คุณสามารถอัปเดตอัตโนมัติได้ หากเป็นการอัปเดตของรุ่น 2.7 หรือสูงกว่า:</p>
+<ol>
+	<li>เปิด <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> ด้วยเบราว์เซอร์ และทำตามคำแนะนำ</li>
+	<li>ต้องการขั้นตอนมากกว่านี้เหรอ? ไม่ละ มีขั้นตอนเท่านี้เอง!</li>
+</ol>
+
+<h3>การอัปเดตด้วยตัวเอง</h3>
+<ol>
+	<li>สำเนาไฟล์ทั้งหมดที่มีการปรับแก้ เช่น ไฟล์ <code>index.php</code> ให้เรียบร้อยก่อนที่จะอัปเดต</li>
+	<li>ลบไฟล์ทั้งหมดของ WordPress รุ่นเก่า เก็บไฟล์ที่คุณปรับแก้ไว้</li>
+	<li>อัปโหลดไฟล์ WordPress รุ่นใหม่</li>
+	<li>เปิด <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a> ด้วยเบราว์เซอร์</span></li>
+</ol>
+
+<h2>การย้ายมาจากระบบอื่น</h2>
+<p>คุณสามารถ <a href="https://codex.wordpress.org/Importing_Content">นำเข้าข้อมูลจากระบบอื่นๆ</a> มายัง WordPress ได้ โดยขั้นตอนแรกคือ ติดตั้ง WordPress ให้เรียบร้อยตามวิธีการข้างต้น หลังจากนั้นให้ย้ายข้อมูลด้วย <a href="wp-admin/import.php" title="Import to WordPress">เครื่องมือการนำเข้า ของเรา</a></p>
+
+<h2>คุณสมบัติที่จำเป็นของระบบ</h2>
+<ul>
+	<li><a href="https://secure.php.net/">PHP</a> รุ่น <strong>5.2.4</strong> หรือสูงกว่า</li>
+	<li><a href="https://www.mysql.com/">MySQL</a> รุ่น <strong>5.0</strong> หรือสูงกว่า</li>
+</ul>
+
+<h3>คุณสมบัติที่แนะนำ</h3>
+<ul>
+	<li><a href="https://secure.php.net/">PHP</a> รุ่น <strong>7</strong> หรือสูงกว่า</li>
+	<li><a href="https://www.mysql.com/">MySQL</a> รุ่น <strong>5.6</strong> หรือสูงกว่า</li>
+	<li>โมดูล <a href="https://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> ของ Apache</li>
+	<li>รองรับ <a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a></li>
+	<li>การลิงก์ไปที่ <a href="https://wordpress.org/">wordpress.org</a> จากเว็บไซต์ของคุณ</li>
+</ul>
+
+<h2>แหล่งข้อมูลออนไลน์</h2>
+<p>หากคุณมีคำถามอื่นๆที่เอกสารฉบับนี้ไม่ได้กล่าวถึง ขอให้ลองไปที่แหล่งข้อมูลออนไลน์ของ WordPress ดังนี้:</p>
+<dl>
+	<dt><a href="https://codex.wordpress.org/">The WordPress Codex</a></dt>
+		<dd>Codex เป็นสารานุกรมของ WordPress มีเนื้อหาครอบคลุม WordPress มากที่สุด เท่าที่จะหาได้</dd>
+	<dt><a href="https://wordpress.org/news/">The WordPress Blog</a></dt>
+		<dd>บล็อกของ WordPress เป็นที่ที่คุณจะทราบข่าวการอัปเดตรุ่นล่าสุด และข่าวอื่นๆเกี่ยวกับ WordPress โดยใน WordPress รุ่นหลังๆจะมีการแสดงข่าวของ WordPress ที่หน้าควบคุมอีกด้วย</dd>
+	<dt><a href="https://planet.wordpress.org/">WordPress Planet</a></dt>
+		<dd>WordPress Planet เป็นผู้ที่รวบรวมเรื่องต่างๆจากเว็บบล็อก WordPress ทั่วโลก</dd>
+	<dt><a href="https://wordpress.org/support/">WordPress Support Forums</a></dt>
+		<dd>ถ้าคุณลองค้นหาจากทุกที่แล้ว แต่ยังไม่สามารถหาคำตอบได้ ชุมชนช่วยเหลือของ WordPress (WordPress Support Forums) นั้นเป็นชุมชนที่มีความกระตือรือร้นมาก และมีขนาดใหญ่ พร้อมที่จะให้ความช่วยเหลือ เพื่อให้พวกเขาช่วยเหลือคุณได้ คุณควรจะบรรยายชื่อหัวข้อ และอธิบายคำถามของคุณให้ละเอียดที่สุดเท่าที่คุณจะทำได้</dd>
+	<dt><a href="https://codex.wordpress.org/IRC">WordPress <abbr title="Internet Relay Chat">IRC</abbr> Channel</a></dt>
+		<dd>IRC ของ WordPress เป็นช่องทางการคุยออนไลน์ ที่ใช้สำหรับแลกเปลี่ยนความคิดเห็นของกลุ่มผู้ใช้ WordPress และช่วยเหลือกันในบางหัวข้อ The above wiki page should point you in the right direction. (<a href="irc://irc.freenode.net/wordpress">irc.freenode.net #wordpress</a>)</dd>
+</dl>
+
+<h2>สุดท้ายนี้</h2>
+<ul>
+	<li>หากคุณมีข้อเสนอแนะ ไอเดีย หรือความคิดเห็น หรือคุณอาจจะพบข้อผิดพลาด! กรุณาเข้ามาคุยกับเราที่ <a href="https://wordpress.org/support/">Support Forums</a></li>
+	<li>WordPress มีระบบ <abbr title="application programming interface">API</abbr> ที่มีความสามารถมากมายสำหรับปลั๊กอิน ช่วยให้การเขียนโค้ดเป็นเรื่องง่าย ถ้าคุณเป็นผู้พัฒนาและสนใจ WordPress คุณไม่ควรที่จะแก้ไขโค้ดของ Core กรุณาดูข้อมูล <a href="https://developer.wordpress.org/plugins/">Plugin Developer Handbook</a></li>
+</ul>
+
+<h2>ส่งต่อความรักที่คุณมีกับ WordPress</h2>
+<p>WordPress ไม่มีเงินหลายล้านดอลล่าร์สำหรับการทำแคมเปญการตลาด หรือมีผู้สนับสนุนที่มีชื่อเสียง แต่เรามีบางอย่างที่มีค่ามากกว่านั้น นั่นคือ &#8212; คุณ ถ้าคุณชื่นชอบใน WordPress กรุณาบอกต่อไปยังเพื่อนคุณ ช่วยเหลือคนที่มีความรู้น้อยกว่าเพื่อเริ่มต้นการใช้งาน หรือเขียนบทความเกี่ยวกับสื่อที่มองข้ามเรา</p>
+<p>WordPress นั้นพัฒนาอย่างเป็นทางการมาจาก <a href="http://cafelog.com/">b2/caf&#233;log</a> ซึ่งริเริ่มโดย Michel V. งานชิ้นนี้ได้ถูกสืบทอดต่อโดย <a href="https://wordpress.org/about/">ผู้พัฒนา WordPress</a> คุณสามารถสนับสนุน WordPress ได้ ผ่านช่องทาง <a href="https://wordpress.org/donate/" title="Donate to WordPress">การบริจาค</a></p>
+
+<h2>ลิขสิทธิ์</h2>
+<p>WordPress เป็นซอฟท์แวร์ฟรี และเผยแพร่ภายใต้เงื่อนไข <abbr title="GNU General Public License">GPL</abbr> รุ่น 2 หรือ (ที่ตัวเลือกของคุณ) รุ่นใดๆหลังจากนั้น ดูรายละเอียดได้ที่ <a href="license.txt">license.txt</a></p>
+
+</body>
+</html>
